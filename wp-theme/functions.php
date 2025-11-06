@@ -250,6 +250,9 @@ require_once ASAD_THEME_DIR . '/inc/page-builder.php';
 require_once ASAD_THEME_DIR . '/inc/email-marketing.php';
 require_once ASAD_THEME_DIR . '/inc/social-media.php';
 require_once ASAD_THEME_DIR . '/inc/database-manager.php';
+require_once ASAD_THEME_DIR . '/inc/ai-assistant.php';
+require_once ASAD_THEME_DIR . '/inc/code-snippets.php';
+require_once ASAD_THEME_DIR . '/inc/image-optimizer.php';
 
 /**
  * AJAX Handler for Dark Mode Toggle
