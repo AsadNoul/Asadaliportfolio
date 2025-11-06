@@ -130,6 +130,84 @@ if (!defined('ABSPATH')) {
                 </a>
             </div>
         </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #8e44ad;">
+                <i class="fas fa-chart-line fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Analytics Dashboard', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Track visitor stats, popular posts, and traffic sources with detailed analytics.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-analytics'); ?>" class="button button-primary">
+                    <?php _e('View Analytics', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #27ae60;">
+                <i class="fas fa-shield-alt fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Security Scanner', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Scan for malware, manage firewall, and audit security with comprehensive protection.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-security'); ?>" class="button button-primary">
+                    <?php _e('Security Tools', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #2980b9;">
+                <i class="fas fa-columns fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Page Builder', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Create stunning pages with drag-and-drop builder and pre-built content blocks.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('post-new.php?post_type=page'); ?>" class="button button-primary">
+                    <?php _e('Build Pages', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #e67e22;">
+                <i class="fas fa-paper-plane fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Email Marketing', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Manage subscribers, create campaigns, and send newsletters to your audience.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-email-marketing'); ?>" class="button button-primary">
+                    <?php _e('Email Marketing', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #34495e;">
+                <i class="fas fa-share-alt fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Social Media Manager', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Auto-post to social media, manage sharing buttons, and display social feeds.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-social-media'); ?>" class="button button-primary">
+                    <?php _e('Social Media', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #7f8c8d;">
+                <i class="fas fa-database fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Database Manager', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Backup, optimize, repair, and manage your WordPress database with ease.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-database'); ?>" class="button button-primary">
+                    <?php _e('Manage Database', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="asad-info-section">

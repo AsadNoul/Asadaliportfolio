@@ -244,6 +244,12 @@ require_once ASAD_THEME_DIR . '/inc/theme-editor.php';
 require_once ASAD_THEME_DIR . '/inc/form-builder.php';
 require_once ASAD_THEME_DIR . '/inc/seo-manager.php';
 require_once ASAD_THEME_DIR . '/inc/performance-optimizer.php';
+require_once ASAD_THEME_DIR . '/inc/analytics.php';
+require_once ASAD_THEME_DIR . '/inc/security-scanner.php';
+require_once ASAD_THEME_DIR . '/inc/page-builder.php';
+require_once ASAD_THEME_DIR . '/inc/email-marketing.php';
+require_once ASAD_THEME_DIR . '/inc/social-media.php';
+require_once ASAD_THEME_DIR . '/inc/database-manager.php';
 
 /**
  * AJAX Handler for Dark Mode Toggle
