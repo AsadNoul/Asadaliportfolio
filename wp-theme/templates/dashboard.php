@@ -91,6 +91,45 @@ if (!defined('ABSPATH')) {
                 </a>
             </div>
         </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #16a085;">
+                <i class="fas fa-envelope fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Form Builder', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Create beautiful contact forms with drag-and-drop builder and manage submissions.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-form-builder'); ?>" class="button button-primary">
+                    <?php _e('Build Forms', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #d35400;">
+                <i class="fas fa-search fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('SEO Manager', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Optimize your website for search engines with meta tags, sitemaps, and schema markup.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-seo-manager'); ?>" class="button button-primary">
+                    <?php _e('Optimize SEO', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon" style="background: #c0392b;">
+                <i class="fas fa-tachometer-alt fa-2x"></i>
+            </div>
+            <div class="card-content">
+                <h2><?php _e('Performance Optimizer', 'asad-portfolio'); ?></h2>
+                <p><?php _e('Boost your website speed with caching, minification, and database optimization.', 'asad-portfolio'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=asad-performance'); ?>" class="button button-primary">
+                    <?php _e('Optimize Performance', 'asad-portfolio'); ?>
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="asad-info-section">
