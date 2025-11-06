@@ -74,6 +74,36 @@ function asad_add_admin_menu() {
         'asad_header_footer_page'
     );
 
+    // Form Builder
+    add_submenu_page(
+        'asad-portfolio-manager',
+        __('Form Builder', 'asad-portfolio'),
+        __('Form Builder', 'asad-portfolio'),
+        'manage_options',
+        'asad-form-builder',
+        'asad_form_builder_page'
+    );
+
+    // SEO Manager
+    add_submenu_page(
+        'asad-portfolio-manager',
+        __('SEO Manager', 'asad-portfolio'),
+        __('SEO Manager', 'asad-portfolio'),
+        'manage_options',
+        'asad-seo-manager',
+        'asad_seo_manager_page'
+    );
+
+    // Performance Optimizer
+    add_submenu_page(
+        'asad-portfolio-manager',
+        __('Performance', 'asad-portfolio'),
+        __('Performance', 'asad-portfolio'),
+        'manage_options',
+        'asad-performance',
+        'asad_performance_page'
+    );
+
     // Theme Settings (redirects to customizer)
     add_submenu_page(
         'asad-portfolio-manager',
@@ -139,6 +169,39 @@ function asad_header_footer_page() {
     }
 
     include ASAD_THEME_DIR . '/templates/header-footer-builder.php';
+}
+
+/**
+ * Form Builder Page
+ */
+function asad_form_builder_page() {
+    if (!current_user_can('manage_options')) {
+        wp_die(__('You do not have sufficient permissions to access this page.'));
+    }
+
+    include ASAD_THEME_DIR . '/templates/form-builder.php';
+}
+
+/**
+ * SEO Manager Page
+ */
+function asad_seo_manager_page() {
+    if (!current_user_can('manage_options')) {
+        wp_die(__('You do not have sufficient permissions to access this page.'));
+    }
+
+    include ASAD_THEME_DIR . '/templates/seo-manager.php';
+}
+
+/**
+ * Performance Page
+ */
+function asad_performance_page() {
+    if (!current_user_can('manage_options')) {
+        wp_die(__('You do not have sufficient permissions to access this page.'));
+    }
+
+    include ASAD_THEME_DIR . '/templates/performance.php';
 }
 
 /**

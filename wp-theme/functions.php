@@ -241,6 +241,9 @@ require_once ASAD_THEME_DIR . '/inc/admin-menu.php';
 require_once ASAD_THEME_DIR . '/inc/plugin-manager.php';
 require_once ASAD_THEME_DIR . '/inc/theme-manager.php';
 require_once ASAD_THEME_DIR . '/inc/theme-editor.php';
+require_once ASAD_THEME_DIR . '/inc/form-builder.php';
+require_once ASAD_THEME_DIR . '/inc/seo-manager.php';
+require_once ASAD_THEME_DIR . '/inc/performance-optimizer.php';
 
 /**
  * AJAX Handler for Dark Mode Toggle
