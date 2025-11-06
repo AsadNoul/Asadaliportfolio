@@ -253,6 +253,8 @@ require_once ASAD_THEME_DIR . '/inc/database-manager.php';
 require_once ASAD_THEME_DIR . '/inc/ai-assistant.php';
 require_once ASAD_THEME_DIR . '/inc/code-snippets.php';
 require_once ASAD_THEME_DIR . '/inc/image-optimizer.php';
+require_once ASAD_THEME_DIR . '/inc/schema-generator.php';
+require_once ASAD_THEME_DIR . '/inc/coming-soon.php';
 
 /**
  * AJAX Handler for Dark Mode Toggle
