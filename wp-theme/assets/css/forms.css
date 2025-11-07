@@ -1,0 +1,305 @@
+/**
+ * Contact Forms Styles
+ *
+ * @package Asad_Portfolio_Manager
+ */
+
+/* Form Wrapper */
+.asad-form-wrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Form Styles */
+.asad-contact-form {
+    width: 100%;
+}
+
+.asad-form-field {
+    margin-bottom: 1.5rem;
+}
+
+.asad-form-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    font-size: 1rem;
+}
+
+.asad-form-field label .required {
+    color: var(--accent-color);
+    margin-left: 3px;
+}
+
+/* Input Fields */
+.asad-form-field input[type="text"],
+.asad-form-field input[type="email"],
+.asad-form-field input[type="tel"],
+.asad-form-field input[type="number"],
+.asad-form-field input[type="url"],
+.asad-form-field select,
+.asad-form-field textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.asad-form-field input:focus,
+.asad-form-field select:focus,
+.asad-form-field textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.asad-form-field input.error,
+.asad-form-field select.error,
+.asad-form-field textarea.error {
+    border-color: var(--accent-color);
+}
+
+/* Textarea */
+.asad-form-field textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Select Dropdown */
+.asad-form-field select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23333" d="M6 9L1 4h10z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+}
+
+/* Checkbox and Radio Groups */
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.checkbox-label,
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.checkbox-label:hover,
+.radio-label:hover {
+    background: var(--border-color);
+}
+
+.asad-form-field input[type="checkbox"],
+.asad-form-field input[type="radio"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Field Description */
+.field-description {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* Submit Button */
+.asad-form-submit {
+    margin-top: 2rem;
+}
+
+.asad-form-submit .btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.asad-form-submit .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Form Messages */
+.asad-form-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    display: none;
+}
+
+.asad-form-message.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    display: block;
+}
+
+.asad-form-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    display: block;
+}
+
+.asad-form-message i {
+    margin-right: 0.5rem;
+}
+
+/* Loading State */
+.asad-contact-form.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.asad-contact-form.loading .btn {
+    position: relative;
+}
+
+.asad-contact-form.loading .btn::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Field Types Specific Styles */
+.asad-field-email input {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%23999" d="M18 2H2C.9 2 0 2.9 0 4v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V4l8 5 8-5v2z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 3rem;
+}
+
+.asad-field-tel input {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%23999" d="M17.256 12.253c-.096-.667-.611-1.187-1.274-1.342-2.577-.604-3.223-2.088-3.332-3.734C12.193 7.092 11.38 7 10 7s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342-.317 2.217-.397 4.47-.397 6.747h15.306c0-2.277-.08-4.53-.397-6.747zM10 15c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .asad-form-wrapper {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .asad-form-field label {
+        font-size: 0.95rem;
+    }
+
+    .asad-form-field input,
+    .asad-form-field select,
+    .asad-form-field textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .asad-form-submit .btn {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
+    }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .asad-form-wrapper {
+    background: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .asad-form-field input,
+[data-theme="dark"] .asad-form-field select,
+[data-theme="dark"] .asad-form-field textarea {
+    background: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .asad-form-field select {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23e0e0e0" d="M6 9L1 4h10z"/></svg>');
+}
+
+/* Accessibility */
+.asad-form-field input:focus-visible,
+.asad-form-field select:focus-visible,
+.asad-form-field textarea:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .asad-form-submit {
+        display: none;
+    }
+
+    .asad-form-wrapper {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
+
+/* Animation */
+.asad-form-field {
+    animation: fadeInUp 0.4s ease-out;
+    animation-fill-mode: both;
+}
+
+.asad-form-field:nth-child(1) { animation-delay: 0.05s; }
+.asad-form-field:nth-child(2) { animation-delay: 0.1s; }
+.asad-form-field:nth-child(3) { animation-delay: 0.15s; }
+.asad-form-field:nth-child(4) { animation-delay: 0.2s; }
+.asad-form-field:nth-child(5) { animation-delay: 0.25s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

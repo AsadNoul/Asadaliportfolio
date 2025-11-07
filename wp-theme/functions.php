@@ -241,6 +241,20 @@ require_once ASAD_THEME_DIR . '/inc/admin-menu.php';
 require_once ASAD_THEME_DIR . '/inc/plugin-manager.php';
 require_once ASAD_THEME_DIR . '/inc/theme-manager.php';
 require_once ASAD_THEME_DIR . '/inc/theme-editor.php';
+require_once ASAD_THEME_DIR . '/inc/form-builder.php';
+require_once ASAD_THEME_DIR . '/inc/seo-manager.php';
+require_once ASAD_THEME_DIR . '/inc/performance-optimizer.php';
+require_once ASAD_THEME_DIR . '/inc/analytics.php';
+require_once ASAD_THEME_DIR . '/inc/security-scanner.php';
+require_once ASAD_THEME_DIR . '/inc/page-builder.php';
+require_once ASAD_THEME_DIR . '/inc/email-marketing.php';
+require_once ASAD_THEME_DIR . '/inc/social-media.php';
+require_once ASAD_THEME_DIR . '/inc/database-manager.php';
+require_once ASAD_THEME_DIR . '/inc/ai-assistant.php';
+require_once ASAD_THEME_DIR . '/inc/code-snippets.php';
+require_once ASAD_THEME_DIR . '/inc/image-optimizer.php';
+require_once ASAD_THEME_DIR . '/inc/schema-generator.php';
+require_once ASAD_THEME_DIR . '/inc/coming-soon.php';
 
 /**
  * AJAX Handler for Dark Mode Toggle
