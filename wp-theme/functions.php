@@ -234,6 +234,15 @@ function asad_register_portfolio_post_type() {
 add_action('init', 'asad_register_portfolio_post_type');
 
 /**
+ * Flush rewrite rules on theme activation
+ */
+function asad_flush_rewrites_on_activation() {
+    asad_register_portfolio_post_type();
+    flush_rewrite_rules();
+}
+add_action('after_switch_theme', 'asad_flush_rewrites_on_activation');
+
+/**
  * Include Required Files
  */
 require_once ASAD_THEME_DIR . '/inc/customizer.php';
