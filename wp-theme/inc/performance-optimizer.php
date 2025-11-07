@@ -216,9 +216,9 @@ function asad_ajax_save_performance_settings() {
 add_action('wp_ajax_asad_save_performance_settings', 'asad_ajax_save_performance_settings');
 
 /**
- * AJAX: Optimize Database
+ * AJAX: Optimize Database (Performance)
  */
-function asad_ajax_optimize_database() {
+function asad_ajax_performance_optimize_database() {
     check_ajax_referer('asad-admin-nonce', 'nonce');
 
     if (!current_user_can('manage_options')) {
@@ -233,7 +233,7 @@ function asad_ajax_optimize_database() {
         'new_size' => $new_size
     ));
 }
-add_action('wp_ajax_asad_optimize_database', 'asad_ajax_optimize_database');
+add_action('wp_ajax_asad_performance_optimize_database', 'asad_ajax_performance_optimize_database');
 
 /**
  * AJAX: Clear All Caches

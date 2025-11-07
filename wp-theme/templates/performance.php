@@ -533,7 +533,7 @@ jQuery(document).ready(function($) {
             url: ajaxurl,
             type: 'POST',
             data: {
-                action: 'asad_optimize_database',
+                action: 'asad_performance_optimize_database',
                 nonce: '<?php echo wp_create_nonce('asad-admin-nonce'); ?>'
             },
             success: function(response) {
